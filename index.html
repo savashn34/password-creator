@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Creator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>
+        Create A Password
+    </h1>
+
+    <div class="container">
+        <form class="form" onsubmit="return false;">
+            <input type="text" id="given" placeholder="Type your keyword to encrypt..." class="input">
+            <button class="button" onclick="entry()">Encrypt</button>
+        </form>
+    </div>
+
+    <div id="res" class="content"></div>
+
+    <br>
+    <hr>
+    <br>
+
+    <div class="content">
+        <p>
+            This is a personal password creator.
+            It's for creating complex passwords that can be easily remembered.
+            Password creation support is limited to 12-32 characters.
+        </p>
+        <p>
+            You must use only letters. No numbers, no marks. It will add them for you.
+            You should just type something basic that you'll never forget. You can pick a keyword.
+        </p>
+        <br>
+        <p>
+            Here is an example usage:
+        </p>
+        <hr>
+        <p>
+            Your keyword: mykeyword
+        </p>
+        <p>
+            Platform to use: github
+        </p>
+        <p>
+            Password: mykeywordforgithub
+        </p>
+        <p>
+            Output will be this: {oJ:BG[iE.x=M%8>HLIj|Dzw3]AKtv*4")
+        </p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
